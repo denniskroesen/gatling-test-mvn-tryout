@@ -48,5 +48,5 @@ class BasicSimulation extends Simulation {
       .formParam("""discontinued""", """""")
       .formParam("""company""", """37"""))
 
-  setUp(scn.inject(atOnceUsers(1)).protocols(httpConf))
+  setUp(scn.inject(atOnceUsers(5)).protocols(httpConf))
 }
